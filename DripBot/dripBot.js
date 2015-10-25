@@ -2,7 +2,7 @@ Highcharts.setOptions({colors:["#DDDF0D","#7798BF","#55BF3B","#DF5353","#aaeeee"
 
 $dripBot = (function($, oldDripBot, isPro) {
 
-	var host = 'https://apottere.github.io/DripBot/';
+	var host = 'https://raw.githubusercontent.com/CaptainSkyverse/captainskyverse.github.io/master/DripBot/dripBot.js';
 
 	if(oldDripBot instanceof Object) {
 		console.log("Stopping old DripBot and starting a new one.");
@@ -208,8 +208,8 @@ $dripBot = (function($, oldDripBot, isPro) {
 	started = false,
 	errorAlerted = false,
 	signupAlerted = false,
-	clickPointCount = 0,
-	clicksPerSecond = 0,
+	clickPointCount = 5,
+	clicksPerSecond = 5,
 	clicksPerSecondCMA = 0,
 	CPSCMALongCount = 0,
 	CPSCMALong = 0,
